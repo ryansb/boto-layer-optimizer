@@ -30,7 +30,7 @@ def strip_docs(json_file):
         raw = json.load(f)
     fixed = _replace_documentation(raw)
     with open(json_file, "w") as f:
-        json.dump(fixed, f)
+        json.dump(fixed, f, separators=(',', ':'))
 
 
 def dedent_json(json_file):
@@ -38,7 +38,7 @@ def dedent_json(json_file):
     with open(json_file) as f:
         raw = json.load(f)
     with open(json_file, "w") as f:
-        json.dump(raw, f, sort_keys=True)
+        json.dump(raw, f, sort_keys=True, separators=(',', ':'))
 
 
 def walk_boto3_data(package_dir, actor):
