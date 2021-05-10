@@ -1,0 +1,8 @@
+{
+  "app": "pipenv run python app.py",
+  "context": {
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/core:stackRelativeExports": "true",
+    "@aws-cdk/aws-rds:lowercaseDbIdentifier": true
+  }
+}
