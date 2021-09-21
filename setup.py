@@ -14,7 +14,7 @@ setuptools.setup(
     package_dir={"": "lambda_layers_testing"},
     packages=setuptools.find_packages(where="lambda_layers_testing"),
     install_requires=[
-        "aws-cdk-lib==2.0.0-rc.1",
+        "aws-cdk-lib==2.0.0-rc.21",
         "constructs>=10.0.0,<11.0.0",
     ],
     python_requires=">=3.6",

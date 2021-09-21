@@ -5,3 +5,6 @@ build-backend = "setuptools.build_meta:__legacy__"
 [tool.black]
 line-length = 140
 target-version = ['py38']
+
+[tool.pyright]
+exclude = ["cdk.out"]

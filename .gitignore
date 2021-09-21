@@ -10,3 +10,6 @@ __pycache__
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# traces from py-spy
+profiles/
